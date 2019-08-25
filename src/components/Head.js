@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-const Head = (props) => (
+const Head = props => (
   <Helmet>
     <title> Olaonipekun Carew | {props.title} </title>
     <meta charSet="utf-8" />

@@ -21,11 +21,6 @@ const Header = () => (
           </Link>
         </li>
         <li>
-          <Link activeClassName="is-active" to="/services">
-            Services
-          </Link>
-        </li>
-        <li>
           <Link activeClassName="is-active" to="/portfolio">
             Portfolio
           </Link>
