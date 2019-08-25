@@ -1,0 +1,59 @@
+$primary-color: #40d690;
+$color-dark: #161616;
+$color-light: #fff;
+$color-gray: #8c8c8c;
+$color-gray-dark: #222222;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-size: cover;
+  line-height: 1.8;
+  color: $color-light;
+}
+
+p {
+  font-size: 1.8rem;
+  color: $color-gray !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+  color: $color-gray;
+}
+
+::placeholder {
+  color: $color-gray;
+  font-family: sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

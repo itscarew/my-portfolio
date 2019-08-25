@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  z-index: 2;
+
+  &__name {
+    & a {
+      color: $color-light;
+      & h1 {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__links {
+    & ul {
+      display: flex;
+
+      & li:not(:last-child) {
+        margin-right: 2rem;
+      }
+      & li {
+        font-size: 1.4rem;
+        & a {
+          color: $color-gray;
+        }
+        & .is-active {
+          color: $color-light;
+        }
+      }
+    }
+  }
+}
