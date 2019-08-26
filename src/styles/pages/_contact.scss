@@ -96,6 +96,9 @@
           &:hover li {
             color: $color-light;
           }
+          &:active li {
+            color: $primary-color;
+          }
         }
       }
       &_email {

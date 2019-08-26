@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -15,29 +14,53 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__name">
-        <Link to="/">
+        <Link paintDrip hex="#161616" duration={0.8} to="/">
           <h1>{data.site.siteMetadata.title}</h1>
         </Link>
       </div>
       <nav className="header__links">
         <ul>
           <li>
-            <Link activeClassName="is-active" to="/">
+            <Link
+              paintDrip
+              hex="#161616"
+              duration={0.8}
+              activeClassName="is-active"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link activeClassName="is-active" to="/resume">
+            <Link
+              paintDrip
+              hex="#161616"
+              duration={0.8}
+              activeClassName="is-active"
+              to="/resume"
+            >
               Resume
             </Link>
           </li>
           <li>
-            <Link activeClassName="is-active" to="/portfolio">
+            <Link
+              paintDrip
+              hex="#161616"
+              duration={0.8}
+              activeClassName="is-active"
+              to="/portfolio"
+            >
               Portfolio
             </Link>
           </li>
           <li>
-            <Link activeClassName="is-active" to="/contact">
+            <Link
+              paintDrip
+              hex="#161616"
+              duration={0.8}
+              activeClassName="is-active"
+              to="/contact"
+            >
               Contact Me
             </Link>
           </li>

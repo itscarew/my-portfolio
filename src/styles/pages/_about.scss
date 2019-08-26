@@ -18,6 +18,16 @@
     width: 100%;
   }
 
+  &__profile {
+    &_myresume {
+      color: $primary-color;
+      font-size: 1.8rem;
+      display: inline-block;
+      transition: all 0.2s ease-out;
+      margin: 1rem 0;
+    }
+  }
+
   &__education {
     & ul {
       list-style: circle inside;

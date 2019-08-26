@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-transition-link",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-transformer-remark",
@@ -33,6 +34,14 @@ module.exports = {
       options: {
         name: "src",
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Poppins", "sans-serif"],
+        },
       },
     },
   ],

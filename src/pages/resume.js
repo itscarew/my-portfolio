@@ -26,20 +26,23 @@ const Resume = () => {
           </h2>
           <p>
             Innovative Front end developer with 2 years experience in building
-            pixel perfect Websites , Web apps and UIs. I aim to make a
+            pixel-perfect Websites, Web apps, and UIs. I aim to make a the
             difference through my creative solution.
           </p>
           <p>
-            Procient In HTML , CSS , JavaScript and modern frameworks like
+            Proficient in HTML, CSS, JavaScript and modern frameworks like
             React. A very passionate developer with good skills and
             understanding.
           </p>
+          <a className="about__profile_myresume" href="/">
+            Check out my resume{" "}
+          </a>
         </div>
         <div className="about__experience">
           <h1>Experience / Work</h1>
           <p>
             I'm currently a freelance developer who has been developing
-            responsive and functional websites and web apps to meet my clients
+            responsive and functional websites and web apps to meet my clients'
             needs.
           </p>
         </div>
@@ -47,12 +50,12 @@ const Resume = () => {
           <h1>Education</h1>
           <ul>
             <li>
-              I am currently schooling in NIIT which I'm going to have{" "}
+              I am currently schooling in NIIT which I'm going to have an{" "}
               <b>Honours Diploma</b> in Software Engineering (Master Mind
               Series).
             </li>
             <li>
-              I have a <b> National Diploma </b> in Computer Science from Yaba
+              I have a <b> National Diploma</b> in Computer Science from Yaba
               College Of Technology.
             </li>
           </ul>
