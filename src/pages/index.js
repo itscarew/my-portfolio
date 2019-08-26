@@ -4,18 +4,15 @@ import Head from "../components/Head"
 
 class Index extends Component {
   state = { new: true }
-
   componentDidMount() {
     this.timer = setInterval(() => {
       this.setState({ new: !this.state.new })
     }, 5000)
-    console.log(this.state.new)
   }
-
   render() {
     return (
       <Layout>
-        <Head title = "Home" />
+        <Head title="Home" />
         <div className="intro">
           <h1 className="intro__text">
             <span className="intro__text_small">
