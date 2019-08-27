@@ -2,6 +2,18 @@
   position: relative;
   width: 65%;
 
+  @media screen and (min-width: 0px) and (max-width: 414px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    width: 80%;
+  }
+
   & h1 {
     font-size: 3rem;
     font-weight: 400;
@@ -40,6 +52,19 @@
 
   &__skills {
     width: 70% !important;
+
+    @media screen and (max-width: 414px) {
+      width: 80% !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 80% !important;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 80% !important;
+    }
+
     & > div p {
       color: $color-light !important;
       text-transform: uppercase;

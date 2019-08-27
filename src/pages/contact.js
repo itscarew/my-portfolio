@@ -6,55 +6,49 @@ import Footer from "../components/Footer"
 const Contact = () => (
   <Layout>
     <Head title="Contact Me" />
-    <div className="contact">
-      <h2 className="contact__title">Contact me</h2>
-      <div className="contact__info">
-        <div className="contact__info_form">
-          <form name="form" method="POST" data-netlify="true">
-            <input type="text" placeholder="Your Name" autoFocus />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              placeholder="Tell me something "
-              required
-              defaultValue="I want to work with you"
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-        <div className="contact__info_socialMedia">
-          <ul>
-            <a href="https://twitter.com/itscarew" target="/_blank">
-              <li>
-                <i className="fab fa-twitter"></i>
-              </li>
-            </a>
-            <a href="https://github.com/itscarew" target="/_blank">
-              <li>
-                <i className="fab fa-github"></i>
-              </li>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/olaonipekun-carew-550930190/"
-              target="/_blank"
-            >
-              <li>
-                <i className="fab fa-linkedin-in"></i>
-              </li>
-            </a>
-            <a href="https://www.instagram.com/itscarew/" target="/_blank">
-              <li>
-                <i className="fab fa-instagram"></i>
-              </li>
-            </a>
-          </ul>
-          <p className="contact__info_socialMedia_email">
-            or Email me: <a href="/">itscarew@gmail.com </a>
-          </p>
-          <Footer />
+    <div className="container">
+      <div className="contact">
+        <h2 className="contact__title">Contact me</h2>
+        <div className="contact__info">
+          <div className="contact__info_form">
+            <form name="form" method="POST" data-netlify="true">
+              <input type="text" placeholder="Your Name" autoFocus />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Subject" />
+              <textarea
+                placeholder="Tell me something "
+                required
+                defaultValue="I want to work with you"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div className="contact__info_socialMedia">
+            <ul>
+              <a href="https://twitter.com/itscarew" target="/_blank">
+                <li>
+                  <i className="fab fa-twitter"></i>
+                </li>
+              </a>
+              <a href="https://github.com/itscarew" target="/_blank">
+                <li>
+                  <i className="fab fa-github"></i>
+                </li>
+              </a>
+              <a href="https://www.instagram.com/itscarew/" target="/_blank">
+                <li>
+                  <i className="fab fa-instagram"></i>
+                </li>
+              </a>
+            </ul>
+            <p className="contact__info_socialMedia_email">
+              or Email me: <a href="/">itscarew@gmail.com </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <Footer />
   </Layout>
 )
 

@@ -18,13 +18,15 @@ export const query = graphql`
 const Portfolio = props => {
   return (
     <Layout>
-      <div className=" portfolio portfolio__content">
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <div
-          className="portfolio__content_eachdiv"
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-        ></div>
-        <a href="/"> View Website </a>
+      <div className="container">
+        <div className=" portfolio portfolio__content">
+          <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+          <div
+            className="portfolio__content_eachdiv"
+            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          ></div>
+          <a href="/"> View Website </a>
+        </div>
       </div>
       <Footer />
     </Layout>

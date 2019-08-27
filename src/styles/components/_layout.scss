@@ -7,6 +7,18 @@
   min-height: 100vh;
   overflow: hidden;
 
+  @media screen and (min-width: 0px) and (max-width: 414px) {
+    padding: 0 4rem;
+  }
+
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    padding: 0 8rem;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: 0 12rem;
+  }
+
   &::after {
     content: "";
     position: fixed;
@@ -17,6 +29,18 @@
     background: transparent;
     border: 0.5px solid rgba($color-gray, 0.3);
     transform: rotate(-25deg) translateX(30%) translateY(-20%);
+
+    @media screen and (min-width: 0px) and (max-width: 414px) {
+      min-height: 30%;
+    }
+
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+      min-height: 45%;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      min-height: 45%;
+    }
   }
 
   &::before {
@@ -29,6 +53,18 @@
     background: transparent;
     border: 0.5px solid rgba($color-gray, 0.3);
     transform: rotate(20deg) translateX(20%) translateY(-50%);
+
+    @media screen and (min-width: 0px) and (max-width: 414px) {
+      min-height: 25%;
+    }
+
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+      min-height: 30%;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      min-height: 30%;
+    }
   }
 
   &__children {
@@ -37,5 +73,8 @@
     height: 100% !important;
     padding: 2rem 0;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
   }
 }

@@ -34,7 +34,11 @@ const Resume = () => {
             React. A very passionate developer with good skills and
             understanding.
           </p>
-          <a className="about__profile_myresume" href="/">
+          <a
+            className="about__profile_myresume"
+            download
+            href="/static/resume.pdf"
+          >
             Check out my resume{" "}
           </a>
         </div>

@@ -19,6 +19,10 @@ $color-gray-dark: #222222;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 414px) {
+    font-size: 58.5%;
+  }
 }
 
 body {
@@ -63,4 +67,9 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+//on specific pages
+.container {
+  flex-grow: 1;
 }

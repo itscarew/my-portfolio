@@ -1,31 +1,31 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
-class Index extends Component {
-  state = { new: true }
-  componentDidMount() {
-    this.timer = setInterval(() => {
-      this.setState({ new: !this.state.new })
+const Index = () => {
+  const [state, setState] = useState(true)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setState(!state)
     }, 5000)
-  }
-  render() {
-    return (
-      <Layout>
-        <Head title="Home" />
-        <div className="intro">
-          <h1 className="intro__text">
-            <span className="intro__text_small">
-              {this.state.new ? " hello! I'm" : "I'm from Lagos, Nigeria"}
-            </span>
-            <span className="intro__text_big">
-              {this.state.new ? "Carew Olaonipekun" : "a web developer"}
-            </span>
-          </h1>
-        </div>
-      </Layout>
-    )
-  }
+    return () => clearInterval(interval)
+  }, [state])
+
+  return (
+    <Layout>
+      <Head title="Home" />
+      <div className="intro">
+        <h1 className="intro__text">
+          <span className="intro__text_small">
+            {state ? " hello! I'm" : "I'm from Lagos, Nigeria"}
+          </span>
+          <span className="intro__text_big">
+            {state ? "Olaonipekun Carew " : "a web developer"}
+          </span>
+        </h1>
+      </div>
+    </Layout>
+  )
 }
 
 export default Index

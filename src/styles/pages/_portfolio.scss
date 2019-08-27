@@ -14,7 +14,7 @@
     }
     &_big {
       display: block;
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 
@@ -24,10 +24,34 @@
     margin: auto;
     margin-bottom: 5rem;
 
+    @media screen and (max-width: 414px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
     & h1 {
       font-size: 3rem;
       margin: 1rem 0;
       font-weight: 200;
+
+      @media screen and (min-width: 0px) and (max-width: 414px) {
+        font-size: 2.3rem;
+      }
+
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        font-size: 2.6rem;
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 2.8rem;
+      }
     }
 
     & a {
