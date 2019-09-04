@@ -9,6 +9,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        url
       }
       html
     }
@@ -25,7 +26,10 @@ const Portfolio = props => {
             className="portfolio__content_eachdiv"
             dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
           ></div>
-          <a href="/"> View Website </a>
+          <a href={props.data.markdownRemark.frontmatter.url} target="/_blank">
+            {" "}
+            View Website{" "}
+          </a>
         </div>
       </div>
       <Footer />

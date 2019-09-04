@@ -42,7 +42,10 @@ const Contact = () => (
               </a>
             </ul>
             <p className="contact__info_socialMedia_email">
-              or Email me: <a href="/">itscarew@gmail.com </a>
+              or Email me:{" "}
+              <a href="mailto:itscarew@gmail.com" target="/_blank">
+                itscarew@gmail.com{" "}
+              </a>
             </p>
           </div>
         </div>

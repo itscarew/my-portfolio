@@ -55,23 +55,11 @@
     }
 
     & a {
-      background: $primary-color;
-      color: $color-dark;
+      color: $primary-color;
       font-size: 1.8rem;
-      padding: 0.2rem 2rem;
-      display: inline;
+      display: inline-block;
       transition: all 0.2s ease-out;
-      margin: 1rem 0;
-
-      &:hover {
-        color: $color-light;
-      }
-
-      &:active {
-        color: $color-gray;
-        background: transparent;
-        border: 1px solid $primary-color;
-      }
+      margin: 0.5rem 0;
     }
 
     &_alldiv {
