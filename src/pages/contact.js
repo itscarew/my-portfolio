@@ -11,7 +11,12 @@ const Contact = () => (
         <h2 className="contact__title">Contact me</h2>
         <div className="contact__info">
           <div className="contact__info_form">
-            <form name="form" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              action="/success"
+            >
               <input
                 type="text"
                 name="name"
