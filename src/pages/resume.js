@@ -82,7 +82,7 @@ const Resume = () => {
           </div>
           <div className="about__skills_react">
             <p>
-              react / redux / git - <small> 91% </small>
+              react js / node js / git - <small> 91% </small>
             </p>
             <span></span>
           </div>
