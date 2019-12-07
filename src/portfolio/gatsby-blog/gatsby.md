@@ -1,5 +1,5 @@
 ---
-title: "Personal Portfolio / Blog devloped with Gatsby"
+title: "Portfolio template / Blog I devloped with Gatsby"
 date: "2019-8-12"
 url: "https://gatsby-site-blog.netlify.com"
 ---

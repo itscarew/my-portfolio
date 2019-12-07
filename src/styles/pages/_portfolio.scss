@@ -5,6 +5,18 @@
     text-align: center;
     margin-bottom: 10rem;
 
+    &_extrasmall {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: $color-gray;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+
     &_small {
       display: block;
       font-size: 2rem;

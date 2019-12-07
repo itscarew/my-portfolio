@@ -34,6 +34,13 @@ const Portfolio = () => {
           <span className="portfolio__title_big">
             Check out a few of my works
           </span>
+          <a
+            href="https://github.com/itscarew"
+            target="/_blank"
+            className="portfolio__title_extrasmall"
+          >
+            Check more of my projects on my github. This is just a few!
+          </a>
         </h1>
 
         {data.allMarkdownRemark.edges.map((portfolio, index) => (
