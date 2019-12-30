@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import Logo from "../assets/IMG_20191023_230251_609.jpg"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -15,6 +16,7 @@ const Header = () => {
     <header className="header">
       <div className="header__name">
         <Link to="/">
+          <img src = {Logo} alt = "logo" />
           <h1>{data.site.siteMetadata.title}</h1>
         </Link>
       </div>
