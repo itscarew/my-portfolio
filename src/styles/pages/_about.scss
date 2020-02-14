@@ -44,8 +44,9 @@
     & ul {
       list-style: circle inside;
       & li {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: $color-gray;
+        font-weight: 200;
       }
     }
   }
@@ -68,7 +69,7 @@
     & > div p {
       color: $color-light !important;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 200;
 
       & small {
         color: $color-gray;
