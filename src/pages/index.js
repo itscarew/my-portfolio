@@ -1,28 +1,72 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Layout from "../components/Layout"
-import Head from "../components/Head"
+
+import "./index.scss"
 
 const Index = () => {
-  const [state, setState] = useState(true)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setState(!state)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [state])
-
   return (
     <Layout>
-      <Head title="Home" />
-      <div className="intro">
-        <h1 className="intro__text">
-          <span className="intro__text_small">
-            {state ? " hello! I'm" : "I'm from Lagos, Nigeria"}
+      <div className="items">
+        <div className="intro">
+          <span>Hi!</span>
+          <span>
+            {" "}
+            I am <b> Olaonipekun Carew </b> . Ola for simplicity 😊 , I write
+            things that work on the internet.{" "}
           </span>
-          <span className="intro__text_big">
-            {state ? "Olaonipekun Carew " : "a web developer"}
-          </span>
-        </h1>
+        </div>
+        <p>
+          I consider myself to be an innovative <b> Front End Developer </b> who
+          loves building pixel-perfect Websites, Web apps, and UIs. I aim to
+          make a the difference through my creative solution.
+        </p>
+        <p>
+          I'm proficient in <b> HTML, CSS, JavaScript, Ruby </b> and modern
+          frameworks like
+          <b> React, SASS, Nodejs </b> .
+        </p>
+        <p>
+          I reside in <b> Lagos, Nigeria </b>. I'm currently a Freelance
+          Developer who has been developing responsive and functional websites
+          and web apps to meet my clients' needs.
+        </p>
+
+        <p>
+          Get in touch with me :{" "}
+          <a href="mailto:itscarew@gmail.com">itscarew@gmail.com</a>.
+        </p>
+
+        <p>
+          Some of my works are on my{" "}
+          <a
+            href="https://github.com/itscarew?tab=repositories"
+            target="/_blank"
+          >
+            github{" "}
+          </a>{" "}
+          repositories . Also check my{" "}
+          <a href="https://twitter.com/itscarew" target="/_blank">
+            tweets
+          </a>{" "}
+          😉!
+        </p>
+
+        <p>
+          Here is my{" "}
+          <a download href="/resume.pdf">
+            {" "}
+            resume{" "}
+          </a>
+          .{" "}
+        </p>
+
+        <p>
+          Outside of programming and work, I love watching movies, especially
+          <b> sci-fi series </b>. I'm also a gamer and I play basketball 🏀. A
+          big NBA fan here 😂.
+        </p>
+
+        <footer> &copy; {new Date().getFullYear()} Me </footer>
       </div>
     </Layout>
   )

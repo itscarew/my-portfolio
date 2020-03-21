@@ -40,7 +40,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Poppins", "sans-serif"],
+          families: ["Raleway", "sans-serif"],
         },
       },
     },

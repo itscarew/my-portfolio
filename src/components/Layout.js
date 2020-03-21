@@ -1,11 +1,12 @@
 import React from "react"
-import Header from "./Header"
-import "../styles/index.scss"
+import Header from "./Head"
 
-const Layout = props => (
+import "./layout.scss"
+
+const Layout = ({ children }) => (
   <div className="layout">
     <Header />
-    <div className="layout__children">{props.children}</div>
+    <div className="layout-children">{children}</div>
   </div>
 )
 
