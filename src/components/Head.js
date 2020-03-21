@@ -1,4 +1,5 @@
 import React from "react"
+import favicon from "../assets/IMG_20191023_230251_609.jpg"
 import { Helmet } from "react-helmet"
 
 const Head = () => {
@@ -11,7 +12,7 @@ const Head = () => {
         href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
         rel="stylesheet"
       />
-
+      <link rel="icon" href={favicon} />
       <script
         src="https://kit.fontawesome.com/3c3d32c537.js"
         crossorigin="anonymous"
