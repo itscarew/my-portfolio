@@ -58,7 +58,7 @@ button {
   &-children {
     position: relative;
     width: 100%;
-    padding: 6rem;
+    padding: 1rem 6rem;
 
     @media screen and (min-width: 0px) and (max-width: 767px) {
       padding: 3rem 1rem;

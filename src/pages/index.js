@@ -44,7 +44,14 @@ const Index = () => {
           >
             github{" "}
           </a>{" "}
-          repositories . Also check my{" "}
+          repositories . This is my{" "}
+          <a
+            href="https://www.linkedin.com/in/olaonipekun-carew/"
+            target="/_blank"
+          >
+            linkedin
+          </a>{" "}
+          profile. Also check my{" "}
           <a href="https://twitter.com/itscarew" target="/_blank">
             tweets
           </a>{" "}
