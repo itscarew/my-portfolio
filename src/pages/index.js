@@ -16,8 +16,8 @@ const Index = () => {
           </span>
         </div>
         <p>
-          I consider myself to be an innovative <b> Front End Developer </b> who
-          loves building pixel-perfect Websites, Web apps, and UIs. I aim to
+          I consider myself to be an innovative <b> Full Stack Developer </b>{" "}
+          who loves building pixel-perfect Websites, Web apps, and UIs. I aim to
           make a the difference through my creative solution.
         </p>
         <p>
