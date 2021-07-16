@@ -23,7 +23,7 @@ const Index = () => {
         <p>
           I'm proficient in <b> HTML, CSS, JavaScript, Ruby </b> and modern
           frameworks like
-          <b> React, SASS, Nodejs </b> .
+          <b> React, SASS, Nodejs , Nextjs , Redis, Express and more </b> .
         </p>
         <p>
           I reside in <b> Lagos, Nigeria </b>. I'm currently a Freelance
