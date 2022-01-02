@@ -3,8 +3,8 @@ import Header from "./Head"
 
 import "./layout.scss"
 
-const Layout = ({ children }) => (
-  <div className="layout">
+const Layout = ({ children, className }) => (
+  <div className={`layout ${className} `}>
     <Header />
     <div className="layout-children">{children}</div>
   </div>

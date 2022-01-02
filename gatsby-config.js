@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-transition-link",
     "gatsby-plugin-sass",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-transformer-remark",
       options: {
